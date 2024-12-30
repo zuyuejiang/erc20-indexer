@@ -65,7 +65,7 @@ function App() {
   async function resolveENSorAddress(input) {
     try {
       const provider = new ethers.providers.JsonRpcProvider(
-        'https://eth-mainnet.g.alchemy.com/v2/Xq23Kn_d8n4PLXmBVePyb1cc4-H6J-yX' // Replace with your Infura or Alchemy endpoint
+        '' // Replace with your Infura or Alchemy endpoint
       );
 
       if (input.endsWith('.eth')) {
@@ -81,7 +81,7 @@ function App() {
 
   async function getTokenBalance() {
     const config = {
-      apiKey: 'Xq23Kn_d8n4PLXmBVePyb1cc4-H6J-yX',
+      apiKey: '',  // Replace with your Infura or Alchemy API
       network: Network.ETH_MAINNET,
     };
     const alchemy = new Alchemy(config);
